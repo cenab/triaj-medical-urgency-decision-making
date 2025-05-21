@@ -1,4 +1,6 @@
-triaj_data.xls
+triaj_data.csv
 __pycache__/
 venv/
 output/
+data/output/
+data/triaj_data.csv

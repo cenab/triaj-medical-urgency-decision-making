@@ -3,10 +3,8 @@ import os
 
 # Define the path to the parquet file
 # Assuming the script is in data/ and the parquet file is in output/
-script_dir = os.path.dirname(__file__)
-# Construct the absolute path to the parquet file
-workspace_dir = "/Users/batu/Documents/DEVELOPMENT/triaj-medical-urgency-decision-making/data"
-parquet_file_path = os.path.join(workspace_dir, 'output', 'processed_triage.parquet')
+# Construct the path to the parquet file relative to the workspace root
+parquet_file_path = os.path.join('data', 'output', 'processed_triage.parquet')
 
 try:
     # Read the parquet file into a pandas DataFrame

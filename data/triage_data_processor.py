@@ -15,8 +15,8 @@ class TriageDataProcessor:
     
     def __init__(
         self,
-        data_file: str = "triaj_data.csv",
-        output_dir: str = "output",
+        data_file: str = "data/triaj_data.csv",
+        output_dir: str = "data/output",
         label_col: str = "urgency",
         random_state: int = 42,
         test_size: float = 0.2,
@@ -66,7 +66,7 @@ class TriageDataProcessor:
         """
         logger.info(f"Loading data from {self.data_file}")
         try:
-            df = pd.read_csv(self.data_file, encoding='utf-8-sig')
+            df = pd.read_csv(self.data_file)
         except Exception as e:
             logger.error(f"Error loading {self.data_file}: {e}")
             raise

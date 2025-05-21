@@ -8,8 +8,8 @@ if __name__ == "__main__":
 
     # Initialize the processor (customize args if needed)
     processor = TriageDataProcessor(
-        data_file="data/triaj_data.xls",
-        output_dir="output",
+        data_file="data/triaj_data.csv",
+        output_dir="data/output",
         label_col="urgency",  # Change if your label column is different
         scaler_type="standard"  # or 'minmax'
     )
